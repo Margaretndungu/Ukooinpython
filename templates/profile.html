@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>Profile</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}"/>
+</head>
+<body>
+    <form method="POST" action="{{ url_for('profile') }}">
+        <h1>Profile</h1>
+        <input type="text" name="username" value="{{ user.username }}" placeholder="Username" required />
+        <input type="email" name="email" value="{{ user.email }}" placeholder="Email" required />
+        <input type="text" name="surname" value="{{ user.surname }}" placeholder="Surname" required />
+        <input type="text" name="firstname" value="{{ user.firstname }}" placeholder="First Name" required />
+        <input type="text" name="othername" value="{{ user.othername }}" placeholder="Other Name">
+        <input type="text" name="contact" value="{{ user.contact }}" placeholder="Contact" required />
+        <input type="submit" value="Update Profile" class="login-button" />
+    </form>
+    <p class="link"><a href="{{ url_for('change_password') }}">Change Password</a></p>
+</body>
+</html>
+

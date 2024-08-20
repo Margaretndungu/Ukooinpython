@@ -1,0 +1,147 @@
+/* Styling for the registration body */
+.registration-body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #6A0DAD 0%, #B19CD9 50%, #FF69B4 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Ensures full height on smaller screens */
+    margin: 0;
+    padding: 20px; /* Added padding to the body for extra space around the container */
+}
+
+/* Styling for the registration container */
+.registration-container {
+    background: rgba(255, 255, 255, 0.9); /* White background with slight transparency */
+    padding: 40px 60px; /* Added padding for more space */
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    max-width: 500px;
+    width: 100%;
+    margin: 20px; /* Added margin to move the form away from the page edges */
+}
+
+/* Styling for the form elements */
+.registration-container form {
+    width: 100%;
+}
+
+.registration-title {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.registration-input {
+    padding: 15px;
+    margin: 10px 0;
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.registration-button {
+    background-color: #4CAF50; /* Green color */
+    color: white;
+    border: none;
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect */
+    transition: background-color 0.3s, box-shadow 0.3s; /* Smooth transitions */
+    width: 100%;
+    margin-top: 20px;
+}
+
+.registration-button:hover {
+    background-color: #45a049; /* Darker green on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Darker shadow on hover */
+}
+
+/* Styling for the links */
+.link {
+    margin-top: 20px;
+}
+
+.link a {
+    display: block;
+    color: #333;
+    text-decoration: none;
+    margin: 5px 0;
+    transition: color 0.3s;
+}
+
+.link a:hover {
+    color: #B19CD9; /* Purple shade on hover */
+}
+
+/* Styling for flash messages */
+.flash-messages {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 20px 0;
+}
+
+.flash-message {
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.flash-message.success {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.flash-message.error {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .registration-container {
+        padding: 20px 30px;
+    }
+
+    .registration-title {
+        font-size: 24px;
+    }
+
+    .registration-input {
+        padding: 12px;
+        font-size: 14px;
+    }
+
+    .registration-button {
+        padding: 12px;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .registration-container {
+        padding: 10px 20px;
+    }
+
+    .registration-title {
+        font-size: 20px;
+    }
+
+    .registration-input {
+        padding: 10px;
+        font-size: 12px;
+    }
+
+    .registration-button {
+        padding: 10px;
+        font-size: 14px;
+    }
+}
+

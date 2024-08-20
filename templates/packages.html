@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>Packages</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style5.css') }}"/>
+</head>
+<body>
+    <div class="container">
+        <h1>Ukoo Internet Packages</h1>
+        
+        <!-- Daily Packages -->
+        <div class="package-group">
+            <h2>Daily Packages</h2>
+            <div class="package">
+                <h3>1hr @ 20bob (2mbps)</h3>
+                <form action="{{ url_for('payment', package_id=1) }}" method="get">
+                    <button type="submit" class="buy-now-button">Buy Now</button>
+                </form>
+            </div>
+            <div class="package">
+                <h3>8hrs @ 50bob (2mbps)</h3>
+                <form action="{{ url_for('payment', package_id=2) }}" method="get">
+                    <button type="submit" class="buy-now-button">Buy Now</button>
+                </form>
+            </div>
+            <div class="package">
+                <h3>24hrs @ 80bob (2mbps)</h3>
+                <form action="{{ url_for('payment', package_id=3) }}" method="get">
+                    <button type="submit" class="buy-now-button">Buy Now</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Weekly Packages -->
+        <div class="package-group">
+            <h2>Weekly Packages</h2>
+            <div class="package">
+                <h3>1 device @ 250 (2mbps)</h3>
+                <form action="{{ url_for('payment', package_id=4) }}" method="get">
+                    <button type="submit" class="buy-now-button">Buy Now</button>
+                </form>
+            </div>
+            <div class="package">
+                <h3>3 devices @ 350 (2mbps)</h3>
+                <form action="{{ url_for('payment', package_id=5) }}" method="get">
+                    <button type="submit" class="buy-now-button">Buy Now</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Monthly Packages -->
+        <div class="package-group">
+            <h2>Monthly Packages</h2>
+            <div class="package">
+                <h3>2mbps @ 1000</h3>
+                <form action="{{ url_for('payment', package_id=6) }}" method="get">
+                    <button type="submit" class="buy-now-button">Buy Now</button>
+                </form>
+            </div>
+            <div class="package">
+                <h3>4mbps @ 1500</h3>
+                <form action="{{ url_for('payment', package_id=7) }}" method="get">
+                    <button type="submit" class="buy-now-button">Buy Now</button>
+                </form>
+            </div>
+            <div class="package">
+                <h3>6mbps @ 2000</h3>
+                <form action="{{ url_for('payment', package_id=8) }}" method="get">
+                    <button type="submit" class="buy-now-button">Buy Now</button>
+                </form>
+            </div>
+            <div class="package">
+                <h3>8mbps @ 2500</h3>
+                <form action="{{ url_for('payment', package_id=9) }}" method="get">
+                    <button type="submit" class="buy-now-button">Buy Now</button>
+                </form>
+            </div>
+            <div class="package">
+                <h3>10mbps @ 3000</h3>
+                <form action="{{ url_for('payment', package_id=10) }}" method="get">
+                    <button type="submit" class="buy-now-button">Buy Now</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+

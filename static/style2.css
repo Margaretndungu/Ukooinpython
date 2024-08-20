@@ -1,0 +1,71 @@
+/* Basic styling for the page */
+body {
+    font-family: Arial, sans-serif;
+     background: linear-gradient(135deg, #6A0DAD 0%, #B19CD9 50%, #FF69B4 100%);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #333;
+}
+
+/* Styling for the login container */
+.login-container {
+    background: rgba(255, 255, 255, 0.9); /* Slightly transparent white */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 30px;
+    max-width: 400px;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+/* Styling for form elements */
+form h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+form input[type="email"],
+form input[type="password"],
+form input[type="submit"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form input[type="submit"] {
+    background-color: #4CAF50; /* Green color */
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+form input[type="submit"]:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+/* Styling for links */
+.links {
+    margin-top: 20px;
+}
+
+.links a {
+    display: block;
+    color: #4CAF50; /* Green color */
+    text-decoration: none;
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+.links a:hover {
+    text-decoration: underline;
+}
+

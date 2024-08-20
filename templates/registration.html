@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style3.css') }}">
+</head>
+<body class="registration-body">
+    <!-- Display flash messages -->
+    {% with messages = get_flashed_messages(with_categories=true) %}
+        {% if messages %}
+            <ul class="flash-messages">
+                {% for category, message in messages %}
+                    <li class="flash-message {{ category }}">{{ message }}</li>
+                {% endfor %}
+            </ul>
+        {% endif %}
+    {% endwith %}
+    
+    <div class="registration-container">
+        <form class="form" action="{{ url_for('register') }}" method="post">
+            <h1 class="registration-title">Registration</h1>
+            <input type="text" class="registration-input" name="username" placeholder="Username" aria-label="Username" required>
+            <input type="email" class="registration-input" name="email" placeholder="Email Address" aria-label="Email Address" required>
+            <input type="text" class="registration-input" name="surname" placeholder="Surname" aria-label="Surname" required>
+            <input type="text" class="registration-input" name="firstname" placeholder="First Name" aria-label="First Name" required>
+            <input type="text" class="registration-input" name="othername" placeholder="Other Name" aria-label="Other Name">
+            <input type="text" class="registration-input" name="contact" placeholder="Contact" aria-label="Contact" required>
+            <input type="password" class="registration-input" name="password" placeholder="Password" aria-label="Password" required>
+            <input type="submit" name="submit" value="Register" class="registration-button">
+            <p class="link"><a href="{{ url_for('login') }}">Click to Login</a></p>
+            <p class="link"><a href="{{ url_for('forgot_password') }}">Forgot Password?</a></p>
+        </form>
+    </div>
+</body>
+</html>
+
